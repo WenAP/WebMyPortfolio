@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 function mostrarAudio(){
 
     audio.preload = "auto";
-    audio.src = "../css/images/Dreamstate-Logic-cute.mp3";
+    audio.src = "./css/images/Dreamstate-Logic-cute.mp3";
     audio.autoplay;
     audio.loop;
     audio.volume = 0.8;
