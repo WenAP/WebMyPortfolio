@@ -73,9 +73,10 @@
 		border-spacing: 0;
 	}
 
-	body {
-		-webkit-text-size-adjust: none;
-	}
+	// body {
+	// 	-webkit-text-size-adjust: none;
+	// 	text-size-adjust: none;
+	// }
 
 	mark {
 		background-color: transparent;
@@ -406,6 +407,7 @@
 		textarea {
 			position: relative;
 			-webkit-appearance: none;
+			appearance: none;
 			display: block;
 			border: 0;
 			outline: 0;
@@ -955,7 +957,7 @@
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transform', 'translateX(#{_size(header) * -1})');
 				@include vendor('transition', ('transform #{_duration(header)} ease'));
-				-webkit-overflow-scrolling: touch;
+				// -webkit-overflow-scrolling: touch; No soportado en mayoria de navegadores
 				display: block;
 				height: 100%;
 				left: 0;
